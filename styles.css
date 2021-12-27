@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+    margin: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.my-name-header {
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-size: 3em;
+    padding-top: 30px;
+}
+
+.content-section {
+    color: white;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.section-header {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 0.4em 0;
+}
+
+.my-image {
+    display: block;
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 2em;
+}
+
+.main-footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #56CCF2;
+    padding: 0.25em 0;
+    color: white;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.footer-nav li {
+    padding: 0 0.5em;
+}
+
+.footer-nav img{
+    width: 30px;
+    height: 30px;
+}
+
+.my-name-footer {
+    color: black;
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 1em;
+}
+
+.project-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.reaction-section {
+    margin-bottom: 15em;
+}
+
+#submit {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 50px;
+}
+
+.calc_links:hover a {
+    color: #56CCF2;
+}
