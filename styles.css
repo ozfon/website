@@ -145,6 +145,10 @@ h3 {
     width: 50px;
 }
 
-.calc_links:hover a {
+.tool_links a:hover {
     color: #56CCF2;
+}
+
+.tool_links li {
+    margin-bottom: 5px;
 }
