@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}Projects Page{% endblock %}
+{% block content %}
+<section class="content-section container">
+    <h2 class="section-header">Tools</h2>
+    <h3>Tool Links</h3>
+    <div class="tool_links">
+        <li><a href="{{ url_for('tools.quad_calc') }}">Quadratic Equation Calculator</a></li>
+        <li><a href="tools/index.php">Upload Files</a></li>
+    </div>
+</section>
+{% endblock %}

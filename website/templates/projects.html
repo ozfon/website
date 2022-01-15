@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}Projects Page{% endblock %}
+{% block content %}
+<section class="content-section container">
+    <h2 class="section-header">Projects</h2>
+    <div class="reaction-section">
+        <h3>Pressurized Oxy-Coal Reactor</h3>
+        <img class="project-image" src="{{ url_for('static', filename='images/reactor.png')}}">
+        <p>A helped complete and test BYU's Pressurized Oxy-Coal Reactor. I worked on this reactor from 2019-2021 and wrote my thesis on this reactor.</p>
+    </div>
+    <div>
+        <h3>Shadowgraph Imaging</h3>
+        <img class="project-image" src="{{ url_for('static', filename='images/shadowgraph_lighter.png')}}">
+        <p>An optical method of visualizing fluid flow. This method enables the differnces in densities of a fluid to be visiable to the human eye or cameras.</p>
+    </div>
+</section>
+{% endblock %}

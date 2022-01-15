@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+    <section class="content-section container">
+        <h2 class="section-header">Home</h2>
+        <p class="text-about-me"> I am a Mechanical Engineer. I graduated from Brigham Young University (BYU) with my master's degree. The title of my thesis was "Completion and Initial Testing of a Pressurized Oxy-Coal Reactor". This work focused on developing a process that allowed coal to burned cleanly and efficiently.</p>
+        <p>My interests include:</p>
+        <ul>
+            <li>Coding - Python, MATlab, C++</li>
+            <li>Web Development - HTML, CSS, JS, Flask</li>
+            <li>Experimental Testing</li>
+            <li>Computation Fluid Dynamics</li>
+            <li>Numerical Methods</li>
+            <li>Optimization</li>
+        </ul>
+        <img class="my-image" src="{{ url_for('static', filename='images/Profile_adjusted.jpg')}}">
+    </section>
+{% endblock %}

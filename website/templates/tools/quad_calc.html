@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+<section class="content-section container">
+    <h2 class="section-header">Quadratic Equation Calculator</h2>
+    <div id="input">
+        <input id="a" value="1"> x<sup>2</sup> + <input id="b" value="1"> x + <input id="c" value="1"> = 0
+    </div>
+    <button id="submit">Solve</button>
+    <p>Answer:</p>
+    <div id="answers">
+        <p id="s1"></p>
+        <p id="s2"></p>
+    </div>
+</section>
+<script src="{{url_for('static', filename='js/script.js')}}"></script>
+{% endblock %}
