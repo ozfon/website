@@ -47,6 +47,10 @@ html, body {
     display: block;
 }
 
+.my-nav li {
+    margin: 0px 1.5em;
+}
+
 .main-nav li {
     padding: 0 5%;
 }
@@ -64,7 +68,7 @@ html, body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 1.5em;
 }
@@ -150,10 +154,25 @@ h3 {
     width: 50px;
 }
 
-.tool_links a:hover {
+.categories h3 {
+    text-align: center;
+}
+
+.calc_links, .rpi_links, .app_links {
+    background-color: #f3f3f3;
+    margin: 5px 5px 40px 5px;
+    padding-top: 10px;
+}
+
+.categories a:hover {
     color: #56CCF2;
 }
 
-.tool_links li {
+.categories li {
     margin-bottom: 5px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 50% 50%;
 }

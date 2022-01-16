@@ -3,10 +3,27 @@
 {% block content %}
 <section class="content-section container">
     <h2 class="section-header">Tools</h2>
-    <h3>Tool Links</h3>
-    <div class="tool_links">
-        <li><a href="{{ url_for('tools.quad_calc') }}">Quadratic Equation Calculator</a></li>
-        <li><a href="tools/index.php">Upload Files</a></li>
+    <div class="categories">
+        <div class="calc_links">
+            <h3>Calculator Links</h3>
+            <ul>
+                <li><a href="{{ url_for('tools.quad_calc') }}">Quadratic Equation Calculator</a></li>
+            </ul>
+
+        </div>
+        <div class="rpi_links">
+            <h3>Raspberry Pi Links</h3>
+            <ul>
+                <li><a href="{{ url_for('tools.led_control') }}">Control LED</a></li>
+                <li><a href="">File Upload</a></li>
+            </ul>
+        </div>
+        <div class="app_links">
+            <h3>Application Links</h3>
+            <ul>
+                <li><a href="">Dijkstr'a Algorithm (Shortest Path)</a></li>
+            </ul>
+        </div>
     </div>
 </section>
 {% endblock %}
