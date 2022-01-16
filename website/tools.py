@@ -1,10 +1,9 @@
-from flask import Blueprint, render_template
-from flask.wrappers import Request
-from werkzeug.wrappers import request
+from flask import Blueprint, render_template, request, flash
 import os
 
 if os.uname()[4][:3] == 'arm':
-    from website import led, GPIO
+    led = 18
+    import RPi.GPIO as GPIO
 
 tools = Blueprint('tools', __name__)
 
@@ -15,7 +14,7 @@ def quad_calc():
 @tools.route('led_control', methods=["POST", "GET"])
 def led_control():
     if os.uname()[4][:3] == 'arm':
-        if Request.method == 'POST':
+        if request.method == 'POST':
             if request.form['submit_button'] == 'Off':
                 GPIO.output(led, GPIO.HIGH)
                 newName = 'On'
