@@ -6,12 +6,12 @@
     <div class="reaction-section">
         <h3>Pressurized Oxy-Coal Reactor</h3>
         <img class="project-image" src="{{ url_for('static', filename='images/reactor.png')}}">
-        <p>A helped complete and test BYU's Pressurized Oxy-Coal Reactor. I worked on this reactor from 2019-2021 and wrote my thesis on this reactor.</p>
+        <p>I completed and tested BYU's Pressurized Oxy-Coal Reactor. I worked on this reactor from 2019-2021 and wrote my thesis on this reactor. This work inlcuded wiring the logic controller, pressure testing the pressure vessel, curring the refractory with a natural gas flame, feeding coal for the first time, and more.</p>
     </div>
-    <div>
+    <div class="reaction-section">
         <h3>Shadowgraph Imaging</h3>
-        <img class="project-image" src="{{ url_for('static', filename='images/shadowgraph_lighter.png')}}">
-        <p>An optical method of visualizing fluid flow. This method enables the differnces in densities of a fluid to be visiable to the human eye or cameras.</p>
+        <img class="project-image" id="right" src="{{ url_for('static', filename='images/shadowgraph_lighter.png')}}">
+        <p>For a class project in my graduate level compressible flow class I produced images of gas flow using a technique called shadowgraph imaging. The picture shows the hot gas from a lighter refracting the light differently then the cooler ambient air. I was also able to visualize shockwaves from the nozzle of a compressed air gun. This method enables the differnces in densities of a fluid to be visiable to the human eye or cameras.</p>
     </div>
 </section>
 {% endblock %}

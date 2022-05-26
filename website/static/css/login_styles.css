@@ -1,0 +1,16 @@
+.login_container {
+    margin: 50px 20%;
+    padding: 50px 10%;
+    text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.user_input * {
+    display: inline-block;
+}
+
+.user_input p {
+    margin-right: 5px;
+}

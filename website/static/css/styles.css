@@ -144,6 +144,10 @@ h3 {
     margin-right: 1em;
 }
 
+#right {
+    float: right;
+}
+
 .reaction-section {
     margin-bottom: 15em;
 }
